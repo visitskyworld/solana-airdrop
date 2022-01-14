@@ -1,0 +1,12 @@
+[programs.localnet]
+solana_airdrop = "GzTDjL8BmZj8YqE81vErYE818giFDpfiJck5Z7aBKS5j"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/home/sandy/.config/solana/id.json"
+
+[scripts]
+test = "yarn run mocha -t 1000000 tests/"

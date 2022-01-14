@@ -1,0 +1,60 @@
+{
+    "version": "0.1.0",
+    "name": "solana_airdrop",
+    "instructions": [
+      {
+        "name": "create",
+        "accounts": [
+          {
+            "name": "baseAccount",
+            "isMut": true,
+            "isSigner": true
+          },
+          {
+            "name": "user",
+            "isMut": true,
+            "isSigner": true
+          },
+          {
+            "name": "systemProgram",
+            "isMut": false,
+            "isSigner": false
+          }
+        ],
+        "args": []
+      },
+      {
+        "name": "increment",
+        "accounts": [
+          {
+            "name": "baseAccount",
+            "isMut": true,
+            "isSigner": false
+          }
+        ],
+        "args": []
+      },
+      {
+        "name": "initialize",
+        "accounts": [],
+        "args": []
+      }
+    ],
+    "accounts": [
+      {
+        "name": "BaseAccount",
+        "type": {
+          "kind": "struct",
+          "fields": [
+            {
+              "name": "count",
+              "type": "u64"
+            }
+          ]
+        }
+      }
+    ],
+    "metadata": {
+      "address": "GzTDjL8BmZj8YqE81vErYE818giFDpfiJck5Z7aBKS5j"
+    }
+  }
